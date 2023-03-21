@@ -37,21 +37,22 @@ def check_pydub():
         print('Run `source .venv/bin/activate` on Mac or Linux, or `./.venv/Scripts/Activate.ps1` on Windows.')
         return False
 
-def check_simpleaudio():
+def check_playsound():
     """
-    Check if pydub is installed.
+    Check if playsound is installed.
     """
 
     try:
-        import simpleaudio
+        import playsound
         return True
     except ImportError:
-        print('Pydub is not installed.')
-        print('Make sure to follow the instructions, including the `pip install simpleaudio` command.')
-        print('You need to install simpleaudio in your virtual environment from the terminal.')
+        print('playsound is not installed.')
+        print('Make sure to follow the instructions, including the `pip install playsound` command.')
+        print('You need to install playsound in your virtual environment from the terminal.')
         print('If you don\'t see a green (.venv) in your terminal, try manually activating the virtual environment first:')
         print('Run `source .venv/bin/activate` on Mac or Linux, or `./.venv/Scripts/Activate.ps1` on Windows.')
         return False
+
 
 def check_matplotlib():
     """
